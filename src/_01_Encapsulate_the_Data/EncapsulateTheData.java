@@ -44,7 +44,7 @@ public class EncapsulateTheData {
 			this.degreesTurned = degreesTurned;
 		}
 	}
-
+	//test
 	public double getDegreesTurned(){
 		return degreesTurned;
 	}
