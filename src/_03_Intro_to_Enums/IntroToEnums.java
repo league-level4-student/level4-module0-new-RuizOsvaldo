@@ -27,7 +27,8 @@ public class IntroToEnums {
 
 		// 3. Create an array of StatesOfMatter with all the values using .values().
 		// Hint: Use "StatesOfMatter." as if it were a static method.
-		StatesOfMatter[] arr = StatesOfMatter.values();
+		StatesOfMatter[] arr;
+		arr = StatesOfMatter.values();
 		// 4. Ask the user for a state of matter.
 		String a = JOptionPane.showInputDialog("Enter a state of Matter");
 		// 5. Iterate through the array and find what the user entered.
@@ -66,7 +67,7 @@ public class IntroToEnums {
 		// 10. Create a variable of the StatesOfMatter type and initialize it randomly.
 		StatesOfMatter rMatter = arr[new Random().nextInt(arr.length)];
 		// 11. Print outs both of its temperatures.
-		System.out.println("Matter chosen: " + rMatter);
+		System.out.println("Random Matter chosen: " + rMatter);
 		System.out.println("Temperature in Celsius: " + rMatter.getCelsiusTemp());
 		System.out.println("Temperature in Fahrenheit: " + rMatter.convertToFahrenheit(rMatter.getCelsiusTemp()));
 		// 11. Create a switch statement that switches on the variable you created.
